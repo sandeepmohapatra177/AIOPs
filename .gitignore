@@ -38,3 +38,4 @@ build/
 # Ollama cache (if any)
 *.db
 *.sqlite
+crewai/

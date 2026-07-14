@@ -1,0 +1,52 @@
+{
+  // Crew name
+  "name": "devops-ai-project",
+
+  // Agents
+  "agents": [
+    "kubernetes_research_specialist",
+    "technical_documentation_specia"
+  ],
+
+  // Tasks
+  "tasks": [
+    {
+      "name": "research_the_latest_kubernetes_task",
+
+      "description": "Research the latest Kubernetes release information from official Kubernetes sources. Collect details about the latest stable version, release date, release highlights, new features, deprecated APIs, security updates, bug fixes, upgrade recommendations, and official reference links. Save the research in a structured format for the next task.",
+
+      "expected_output": "A structured Kubernetes research report.",
+
+      "agent": "kubernetes_research_specialist"
+    },
+
+    {
+      "name": "generate_markdown_document",
+
+      "description": "Read the Kubernetes research from the previous task and generate a professional Markdown document named Kubernetes_Latest_Updates.md. The document should contain an executive summary, latest version, release highlights, new features, deprecated APIs, security updates, bug fixes, upgrade recommendations, and official reference links.",
+
+      "expected_output": "A Markdown file named Kubernetes_Latest_Updates.md.",
+
+      "agent": "technical_documentation_specia",
+
+      "context": [
+        "research_the_latest_kubernetes_task"
+      ]
+    }
+  ],
+
+  // Workflow
+  "process": "sequential",
+
+  // Logging
+  "verbose": true,
+
+  // Crew memory
+  "memory": false,
+
+  // Enable planning
+  "planning": false,
+
+  // Runtime inputs
+  "inputs": {}
+}
