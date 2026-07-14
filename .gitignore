@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# CrewAI cache
+.crewai/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Environment files
+.env
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# IDE
+.idea/
+
+# Ollama cache (if any)
+*.db
+*.sqlite
